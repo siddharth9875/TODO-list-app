@@ -4,7 +4,7 @@
 :root {
     --primay: #ea40a4;
     --business: #3a82ee;
-    --personal: var(var(--primay));
+    --personal: #ea40a4;
     --light: #eee;
     --dark: #313154;
     --danger: #ff5b57;
@@ -90,6 +90,13 @@ h4 {
     margin-bottom: 1.5rem;
 }
 
+.category1{
+    position: relative;
+    top: 17.7px;
+    width: 15px;
+    height: 15px;
+}
+
 .create-todo .options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -109,20 +116,22 @@ h4 {
     cursor: pointer;
 }
 
+#per{
+    color: #ea40a4;
+}
+
 input[type="redio"],
 input[type="checkbox"] {
     display: none;
 }
 
-#gol{
+.bubble {
 
     display: flex;
-    position: relative;
-    top: -16.9px;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18.98px;
     box-shadow: var(--business);
     border-radius: 50%;
     border: 2px solid var(--business);
@@ -130,38 +139,10 @@ input[type="checkbox"] {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    box-shadow: var(--business-glow);
 }
 
-#mol{
-
-    display: flex;
-    position: relative;
-    top: -16.9px;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    box-shadow: var(--business);
-    border-radius: 50%;
-    border: 2px solid var(--business);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.bubble{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    box-shadow: var(--business);
-    border-radius: 50%;
-    border: 2px solid var(--business);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.personal {
+    border-color: var(--personal);
+    box-shadow: var(--personal-glow);
 }
